@@ -1,0 +1,19 @@
+##### SINGLYLINKEDLIST
+
+class singlylinked:
+      class node:
+            def _init_(self, element, nextnode = none):
+                  self.element = element
+                  self.nextnode = nextnode
+      def _init_(self):
+            self.head = none
+            self.size = 0
+            
+      def _str_(self):
+            result = ""
+            pointer =  self.head
+            while pointer != none:
+                  result = result + str(pointer.element) + ""
+                  pointer = pointer.nextnode
+                  return result
+            
